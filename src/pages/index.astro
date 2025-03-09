@@ -1,0 +1,25 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🧑‍🚀 Hello, Astronauts!</h1>
+			<p>
+				Sur ce site je vais parler de... moi ? Ce sera surtout une trace du moi du passé pour le moi du futur.
+				Quand j'aurais le temps je ferais des mini-essais ( un peu comme <a href="https://www.paulgraham.com/articles.html">Paul Graham</a> ). Ce sera le moment pour moi d'apprendre à me connaître,
+				de donner forme à mes pensées, mes ambitions, mes angoisses, mes moments de joies :)
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
